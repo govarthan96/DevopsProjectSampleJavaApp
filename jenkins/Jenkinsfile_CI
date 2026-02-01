@@ -32,7 +32,7 @@ pipeline {
         }
         stage('codecoverage') {
 	   steps {
-                echo 'unittest....'
+                echo 'unittest.....'
 	        sh script: '/opt/homebrew/Cellar/maven/3.9.12/libexec/bin/mvn verify'
                  }
 	   post {
